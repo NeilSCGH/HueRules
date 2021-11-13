@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="icon" href="img/favicon.png" />
+    <title>Hue Rules editor</title>
+</head>
+<body>
+	<div id="headerDiv">
+		<h1>Welcome</h1>
+	</div>
+
+	<div id="mainDiv">
+		<div id="contentDiv">
+			<div id="settingsDiv">
+				<label for="HubAPI">IP :</label>
+				<input id="HubIP" type="text" name="HubIP">
+				<label for="HubAPI">API Key :</label>
+				<input id="APIKey" type="text" name="APIKey">
+			</div>
+			
+			<div id="buttonDiv">
+				<a onclick="getRules();"><button>Get rules</button></a>
+			</div>
+
+			<table id="rulesTable">
+			        <tbody>
+			        </tbody>
+			        <thead>
+			          <tr>
+			            <th>Rule id</th>
+			            <th>Conditions</th>
+			            <th>Actions</th>
+			          </tr>
+			        </thead>
+			    </table>
+		</div>
+	</div>
+
+	<div class="background">
+      <div class="background-fadeColor" style="background-image: url(/img/background-fadeColor.png);"></div>
+      <div class="background-granularEffect" style="background-image: url(/img/background-granularEffect.png);"></div>
+	</div>
+</body>
+</html>
+
+
+
+

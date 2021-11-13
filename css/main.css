@@ -1,0 +1,107 @@
+:root {
+	--header: #e5a00d;
+	--buttonBackground: #F5F5F5;
+	--buttonBackgroundHover: #D6D6D6;
+	--buttonBorder: #CCCCCC;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: hero-new,sans-serif;
+}
+
+body {
+	position:relative;
+}
+
+h1 {
+	color: var(--header);
+}
+
+#headerDiv {	
+	display: flex;
+	align-items: center;
+	user-select: none;
+	justify-content: center;
+}
+
+#mainDiv {
+	margin-top: 50px;
+ 	width: 100%;	
+	display:flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+#settingsDiv {
+	width: 100%;
+	display:flex;
+	align-items: center; 
+	justify-content: center;
+	margin: 10px 0;
+}
+
+#settingsDiv label {
+	margin: 0 10px;
+	color: white;
+}
+
+#buttonDiv {
+ 	width: 100%;	
+}
+
+#buttonDiv button {
+	margin-bottom: 20px;
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--buttonBackground);
+	border-color: var(--buttonBorder);
+	border-width: 2px;
+	font-size: 20px;
+  	transition: 0.3s;
+  	cursor:pointer;
+}
+
+#buttonDiv button:hover {
+	background-color: var(--buttonBackgroundHover);
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-bottom: 125px;
+}
+
+th {
+    background-color: rgb(235,235,235);
+}
+
+td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+tr:nth-child(2n+1) td {
+    background-color: rgb(245,245,245);
+}
+
+tr:nth-child(2n) td {
+    background-color: rgb(250,250,250);
+}
+
+td {
+    text-align: center;
+}
+
+tr td:nth-child(1) {
+    text-align: left;
+}
