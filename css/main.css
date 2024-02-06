@@ -68,7 +68,6 @@ h1 {
 	background-color: var(--buttonBackgroundHover);
 }
 
-
 table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
@@ -99,7 +98,7 @@ tr:nth-child(2n) td {
 }
 
 td {
-    text-align: center;
+    //text-align: center;
 }
 
 tr td:nth-child(1) {

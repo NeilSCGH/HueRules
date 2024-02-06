@@ -20,12 +20,16 @@
 			<div id="settingsDiv">
 				<label for="HubAPI">IP :</label>
 				<input id="HubIP" type="text" name="HubIP">
+
 				<label for="HubAPI">API Key :</label>
 				<input id="APIKey" type="text" name="APIKey">
+
+				<input type="checkbox" id="rawData" name="rawData" onchange="rawDataUpdate()">
+				<label for="rawData">Show raw data</label>
 			</div>
 			
 			<div id="buttonDiv">
-				<a onclick="getRules();"><button>Get rules</button></a>
+				<a onclick="getAll();"><button>Get data</button></a>
 			</div>
 
 			<table id="rulesTable">
